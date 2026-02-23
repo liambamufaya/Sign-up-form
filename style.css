@@ -80,7 +80,6 @@ label {
 input {
   margin-bottom: 15px;
   width: 220px;
-  border-radius: 5px;
 }
 .contact {
   background-color: rgb(255, 255, 255);
@@ -88,6 +87,8 @@ input {
   padding:40px;
   font-size: small;
   height: 300px;
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,0.4)
+
 }
 
 
@@ -101,4 +102,9 @@ fieldset {
   flex-direction: column;
   flex-wrap: wrap;
   height: 250px;
+}
+
+input:focus {
+  box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+
 }

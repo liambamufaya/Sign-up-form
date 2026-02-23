@@ -29,6 +29,18 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* fonts */
+@font-face {
+    font-family: 'Times';
+    src: url(fonts/FiraSans/FiraSans-Medium.woff2) format('woff2'),
+         url(fonts/FiraSans/FiraSans-Medium.woff2) format('woff');
+         font-weight: bold;
+         font-style: normal;
+         font-display: swap;
+}
+
+
+
 img {
     height: 100vh;
     width:40vw;
@@ -41,5 +53,52 @@ img {
 
 body {
     display: flex;
+   
+}
+p {
+ color: rgb(71, 93, 112);
+}
 
+.form-body {
+ 
+    font-family: Times;
+    background-color:rgb(249, 250, 251);
+    flex-grow: 1;
+}
+
+.form-header {
+   align-items: center;
+
+} 
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+}
+input {
+  margin-bottom: 15px;
+  width: 220px;
+  border-radius: 5px;
+}
+.contact {
+  background-color: rgb(255, 255, 255);
+  border: 0px 70px 70px;
+  padding:40px;
+  font-size: small;
+  height: 300px;
+}
+
+
+.form-header {
+  padding: 20px 15px 20px 60px;
+  margin-top: 100px;
+}
+fieldset {
+  display:flex;
+  gap: px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
 }
